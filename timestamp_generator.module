@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains timestamp_generator.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function timestamp_generator_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the timestamp_generator module.
+    case 'help.page.timestamp_generator':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Renders the timestamp for each request.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+name: timestamp_generator
+type: module
+description: Renders the timestamp for each request.
+core: 8.x
+package: Demo
